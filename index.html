@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Frozen Fish Store</title>
+  <title>Магазин Замороженої Риби</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -11,9 +11,10 @@
   <header id="main-header">
     <nav class="nav">
       <ul class="nav-list">
-        <li><a href="#catalog" class="nav-link">Catalog</a></li>
-        <li><a href="#about" class="nav-link">About Us</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#catalog" class="nav-link">Каталог</a></li>
+        <li><a href="#about" class="nav-link">Про нас</a></li>
+        <li><a href="#contact" class="nav-link">Контакти</a></li>
+        <li><a href="business-logic.html" class="nav-link">Бізнес-логіка</a></li>
       </ul>
     </nav>
   </header>
@@ -21,71 +22,72 @@
   <div class="container">
     <div class="left-menu">
       <ul>
-        <li><a href="#why-to-choose" onclick="showInfo('why-to-choose')">Why Choose Us?</a></li>
-        <li><a href="#our-products" onclick="showInfo('our-products')">Our Products</a></li>
-        <li><a href="#contact-form" onclick="showInfo('contact-form')">Contact Us</a></li>
+        <li><a href="#why-to-choose">Чому обирають нас?</a></li>
+        <li><a href="#our-products">Наші продукти</a></li>
+        <li><a href="#contact-form">Зв'яжіться з нами</a></li>
       </ul>
     </div>
 
     <div class="content">
       <section class="hero">
-        <h1 class="fade-in">Frozen Fish Store</h1>
-        <p class="fade-in">Quality Frozen Seafood, Delivered to Your Door!</p>
-        <p class="fade-in">Freshness Guaranteed. Wholesale and Retail.</p>
+        <h1>Магазин морепродуктів "Рибний світ"</h1>
+        <p>Якісна заморожена риба з доставкою до вашого дому!</p>
+        <p>Гарантія свіжості. Опт і роздріб.</p>
+        <img src="images/001" alt="Свіжий лосось" style="width: 100%; max-width: 500px;">
       </section>
 
-      <div id="why-to-choose" class="additional-info" style="display:none;">
-        <h2>Why Choose Us</h2>
+      <div id="why-to-choose" class="additional-info">
+        <h2>Чому обирають нас</h2>
         <ul>
-          <li>High-quality frozen seafood</li>
-          <li>Competitive wholesale prices</li>
-          <li>Fast and reliable delivery</li>
+          <li>Високоякісна заморожена риба</li>
+          <li>Конкурентні оптові ціни</li>
+          <li>Швидка та надійна доставка</li>
         </ul>
       </div>
 
-      <div id="our-products" class="table-section" style="display:none;">
-        <h2>Our Bestsellers</h2>
+      <div id="our-products" class="table-section">
+        <h2>Наші хіти продажу</h2>
         <table>
           <thead>
             <tr>
-              <th>Product</th>
-              <th>Price</th>
-              <th>Description</th>
+              <th>Продукт</th>
+              <th>Ціна</th>
+              <th>Опис</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Salmon</td>
-              <td>$12/kg</td>
-              <td>Rich in Omega-3, perfect for grilling.</td>
+              <td>Лосось</td>
+              <td>700 грн/кг</td>
+              <td>Багатий на Омега-3, ідеально підходить для грилю.</td>
             </tr>
             <tr>
-              <td>Tuna</td>
-              <td>$10/kg</td>
-              <td>High-quality tuna for sushi or steaks.</td>
+              <td>Тунець</td>
+              <td>800 грн/кг</td>
+              <td>Високоякісний тунець для суші або стейків.</td>
             </tr>
             <tr>
-              <td>Cod</td>
-              <td>$8/kg</td>
-              <td>Delicate flavor, ideal for frying or baking.</td>
+              <td>Мойва</td>
+              <td>150 грн/кг</td>
+              <td>Ніжний смак, ідеально підходить для смаження або запікання.</td>
             </tr>
           </tbody>
         </table>
       </div>
 
-      <div id="contact-form" class="contact-form" style="display:none;">
-        <h2>Contact Us</h2>
+      <div id="contact-form" class="contact-form">
+        <h2>Зв'яжіться з нами</h2>
         <form action="/submit" method="POST">
-          <label for="name">Name:</label>
+          <label for="name">Ім'я:</label>
           <input type="text" id="name" name="name" required>
 
-          <label for="email">Email:</label>
+          <label for="email">Електронна пошта:</label>
           <input type="email" id="email" name="email" required>
 
-          <label for="message">Message:</label>
+          <label for="message">Повідомлення:</label>
           <textarea id="message" name="message" rows="4" required></textarea>
 
-          <button type="submit">Send</button>
+          <button type="submit">Надіслати</button>
         </form>
       </div>
     </div>
@@ -93,40 +95,25 @@
 
   <section class="services">
     <div class="service">
-      <h2>Wholesale Orders</h2>
-      <a href="#">Learn more</a>
+      <h2>Оптові замовлення</h2>
+      <a href="#">Дізнатись більше</a>
     </div>
     <div class="service">
-      <h2>Retail Offers</h2>
-      <a href="#">Learn more</a>
+      <h2>Пропозиції для роздрібу</h2>
+      <a href="#">Дізнатись більше</a>
     </div>
     <div class="service">
-      <h2>Delivery Services</h2>
-      <a href="#">Learn more</a>
+      <h2>Послуги доставки</h2>
+      <a href="#">Дізнатись більше</a>
     </div>
     <div class="service">
-      <h2>All Products</h2>
-      <a href="#">View Catalog</a>
+      <h2>Всі продукти</h2>
+      <a href="#">Переглянути каталог</a>
     </div>
   </section>
 
   <footer id="footer">
-    <p>&copy; 2024 Frozen Fish Store. All rights reserved.</p>
+    <p>&copy; 2024 Магазин Замороженої Риби. Усі права захищені.</p>
   </footer>
-
-  <script>
-    function showInfo(section) {
-      const sectionElement = document.getElementById(section);
-      const isVisible = sectionElement.style.display === 'block';
-
-      document.getElementById('why-to-choose').style.display = 'none';
-      document.getElementById('our-products').style.display = 'none';
-      document.getElementById('contact-form').style.display = 'none';
-
-      if (!isVisible) {
-        sectionElement.style.display = 'block';
-      }
-    }
-  </script>
 </body>
 </html>
