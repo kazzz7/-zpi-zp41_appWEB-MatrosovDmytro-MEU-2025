@@ -201,3 +201,11 @@ p {
   padding: 10px;
   line-height: 1.8;
 }
+/* Стилі для сторінки business-logic.html */
+.business-logic-page {
+  background-image: url('images/003.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
