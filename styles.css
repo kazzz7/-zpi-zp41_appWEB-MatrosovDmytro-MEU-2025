@@ -209,3 +209,51 @@ p {
   background-repeat: no-repeat;
   min-height: 100vh;
 }
+
+/* Стилі для таблиць */
+.table-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.table-section th,
+.table-section td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.table-section th {
+  background-color: #0073e6;
+  color: white;
+  font-weight: bold;
+}
+
+.table-section tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table-section tr:hover {
+  background-color: #d0e7ff;
+}
+
+/* Стилі для багаторівневих списків */
+.additional-info ul {
+  list-style-type: square; /* Стиль маркерів верхнього рівня */
+  margin: 0;
+  padding-left: 20px;
+}
+
+.additional-info ul li {
+  margin-bottom: 5px;
+}
+
+.additional-info ul li ul {
+  list-style-type: circle; /* Стиль маркерів для вкладених списків */
+  padding-left: 20px;
+}
+
+.additional-info ul li ul li {
+  margin-bottom: 5px;
+}
