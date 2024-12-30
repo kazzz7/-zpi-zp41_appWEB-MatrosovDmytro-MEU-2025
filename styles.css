@@ -194,3 +194,10 @@ input[type="text"], input[type="email"] {
   border: 4px solid #0073e6; /* Стилізує текстові поля форми */
   padding: 5px;
 }
+
+p {
+  outline: 1px dashed #0a0301; /* Пунктирний контур помаранчевого кольору */
+  outline-offset: 10px;
+  padding: 10px;
+  line-height: 1.8;
+}
